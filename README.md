@@ -1,5 +1,5 @@
 # Britlex
-- **modern school that utilizes current ways of learning.**
+- &ndash; modern school that utilizes current ways of learning.
 
 <p align="center">
       <img src="https://i.ibb.co/TWWBRKh/Cover.png" alt="Project Logo" width="726">
