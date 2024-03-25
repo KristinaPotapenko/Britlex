@@ -3,7 +3,7 @@
 
 
 <p align="center">
-      <img src="https://i.ibb.co/KX6Kt0g/mockup.png" alt="Project Logo" width="726">
+      <img src="https://i.ibb.co/LRX1L6f/mockup.png" alt="Project Logo" width="726">
 </p>
 
 ## About
