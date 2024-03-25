@@ -1,0 +1,125 @@
+.about {
+  padding: 25px 0 50px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 26px 0 50px 0;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding: 90px 0;
+  }
+
+  &__title {
+    display: block;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  }
+
+  &__title_screen_big {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      flex-direction: row;
+      margin-left: 50px;
+      gap: 130px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 20px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      gap: 6px;
+    }
+  }
+
+  &__statistics {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: calc(40 / 24);
+    color: var(--color-text);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 40px;
+      line-height: calc(22 / 40);
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      font-size: 48px;
+      line-height: calc(72 / 48);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 13px;
+    line-height: calc(20 / 13);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+      line-height: calc(21 / 14);
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      font-size: 20px;
+      line-height: calc(30 / 20);
+    }
+  }
+
+  &__image {
+    @media screen and (min-width: $bp-tablet) {
+      width: 42%;
+    }
+  }
+}

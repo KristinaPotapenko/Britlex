@@ -1,0 +1,61 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding-top: 36px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding-top: 55px;
+  }
+
+  &__list {
+    display: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: block;
+      padding: 20px 108px;
+      text-align: center;
+      font-weight: 500;
+      line-height: calc(30 / 20);
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #ffffff;
+        background-color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+      }
+    }
+  }
+
+  &__burger-menu {
+    display: block;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: none;
+    }
+  }
+}

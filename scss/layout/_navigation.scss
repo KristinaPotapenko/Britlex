@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    text-align: center;
+    font-weight: 500;
+    line-height: calc(30 / 20);
+    color: var(--primary-color);
+    transition: all 0.2s;
+
+    &:hover {
+      padding: 10px;
+      background-color: transparent;
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.footer {
+  padding-bottom: 48px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding-bottom: 77px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 26px;
+    border-top: 1px solid #c4c4c4;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 18px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      padding-top: 22px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media screen and (min-width: $bp-laptop) {
+      gap: 80px;
+    }
+  }
+
+  &__link {
+    font-size: 11px;
+    line-height: calc(17 / 11);
+    font-weight: 500;
+    color: var(--accent-color);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 13px;
+      line-height: calc(20 / 13);
+      font-weight: 400;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      font-size: 24px;
+      line-height: calc(36 / 24);
+      letter-spacing: 0.48px;
+    }
+  }
+
+  &__text-decoration {
+    display: inline-block;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 5px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      display: none;
+    }
+  }
+}

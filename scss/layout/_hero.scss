@@ -1,0 +1,133 @@
+.hero {
+  position: relative;
+  padding: 130px 0 32px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 124px 0 32px 0;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding: 180px 0 90px 0;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: calc(36 / 24);
+    text-align: center;
+    color: var(--color-title);
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 220px;
+      margin-bottom: 25px;
+      font-size: 36px;
+      line-height: calc(45 / 36);
+      text-align: left;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      max-width: 390px;
+      margin-bottom: 40px;
+      font-size: 64px;
+      line-height: calc(80 / 64);
+    }
+  }
+
+  &__description {
+    margin-bottom: 33px;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 340px;
+      margin-bottom: 32px;
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      text-align: left;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      max-width: 500px;
+      margin-bottom: 60px;
+      font-size: 24px;
+      line-height: calc(36 / 24);
+    }
+  }
+
+  &__button {
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(24 / 16);
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 236px;
+      padding: 19px;
+      font-size: 18px;
+      line-height: calc(27 / 18);
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      max-width: 426px;
+      padding: 23px;
+      font-size: 36px;
+      line-height: calc(54 / 36);
+      letter-spacing: 1.08px;
+    }
+  }
+
+  &__image {
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      width: 50%;
+    }
+  }
+
+  &__decoration {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      top: 25%;
+      left: 31%;
+      display: block;
+    }
+
+    @media screen and (min-width: 940px) and (max-width: 1104px) {
+      top: 24%;
+      left: 27%;
+    }
+
+    @media screen and (min-width: 1105px) and (max-width: 1279px) {
+      top: 28%;
+      left: 22%;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      display: none;
+    }
+  }
+}
