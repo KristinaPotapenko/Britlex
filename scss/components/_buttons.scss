@@ -1,0 +1,15 @@
+.button {
+  text-align: center;
+  color: #fff;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+  }
+}

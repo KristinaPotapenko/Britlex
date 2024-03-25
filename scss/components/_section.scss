@@ -1,0 +1,22 @@
+.section {
+  &__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: calc(36 / 24);
+    text-align: center;
+    color: var(--color-title);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 30px;
+      line-height: calc(45 / 30);
+      text-align: left;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      margin-bottom: 60px;
+      font-size: 48px;
+      line-height: calc(72 / 48);
+    }
+  }
+}

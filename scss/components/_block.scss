@@ -1,0 +1,23 @@
+.block {
+  &__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: calc(28 / 18);
+    color: var(--primary-color);
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 175px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      max-width: max-content;
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: calc(45 / 30);
+    }
+  }
+}
